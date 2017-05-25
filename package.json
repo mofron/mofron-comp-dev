@@ -1,0 +1,22 @@
+{
+  "name": "mofron-comp-dev",
+  "version": "0.0.1",
+  "description": "mofron component for development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simpart/mofron-comp-dev.git"
+  },
+  "keywords": [
+    "mofron"
+  ],
+  "author": "simparts",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/simpart/mofron-comp-dev/issues"
+  },
+  "homepage": "https://github.com/simpart/mofron-comp-dev#readme"
+}

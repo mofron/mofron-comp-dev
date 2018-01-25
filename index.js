@@ -1,18 +1,18 @@
 /**
- * @file   mofron-comp-xxx/index.js
+ * @file   mofron-comp-{@comp-name}/index.js
  * @author simpart
  */
-
+let mf = require('mofron');
 /**
- * @class mofron.comp.xxx
- * @brief xxx component for mofron
+ * @class mofron.comp.{@Comp-name}
+ * @brief {@comp-name} component for mofron
  */
-mofron.comp.xxx = class extends mofron.Component {
+mf.comp.{@Comp-name} = class extends mf.Component {
     
     constructor (prm_opt) {
         try {
             super();
-            this.name('xxx');
+            this.name('{@Comp-name}');
             this.prmOpt(prm_opt);
         } catch (e) {
             console.error(e.stack);
@@ -21,18 +21,17 @@ mofron.comp.xxx = class extends mofron.Component {
     }
     
     /**
-     * initialize vdom
+     * initialize dom contents
      * 
-     * @param prm : (string) text contents
+     * @param prm : (Date object) display date
      */
     initDomConts (prm) {
         try {
-            
+            super.initDomConts();
         } catch (e) {
             console.error(e.stack);
             throw e;
         }
     }
 }
-mofron.comp.xxx = {};
-module.exports = mofron.comp.xxx;
+module.exports = mofron.comp.{@Comp-name};

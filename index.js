@@ -33,5 +33,15 @@ mf.comp.{@Comp-name} = class extends mf.Component {
             throw e;
         }
     }
+    
+    themeConts () {
+        try {
+            
+        } catch (e) {
+            console.error(e.stack);
+            throw e;
+        }
+    }
+    
 }
 module.exports = mofron.comp.{@Comp-name};

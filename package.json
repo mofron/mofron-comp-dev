@@ -1,6 +1,6 @@
 {
   "name": "mofron-comp-dev",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "mofron component for development",
   "main": "index.js",
   "scripts": {

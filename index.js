@@ -9,11 +9,16 @@ let mf = require('mofron');
  */
 mf.comp.{@Comp-name} = class extends mf.Component {
     
-    constructor (prm_opt) {
+    /**
+     * initialize component
+     * 
+     * @param po paramter or option
+     */
+    constructor (po) {
         try {
             super();
             this.name('{@Comp-name}');
-            this.prmOpt(prm_opt);
+            this.prmOpt(po);
         } catch (e) {
             console.error(e.stack);
             throw e;
@@ -23,7 +28,7 @@ mf.comp.{@Comp-name} = class extends mf.Component {
     /**
      * initialize dom contents
      * 
-     * @param prm : (Date object) display date
+     * @param prm : 
      */
     initDomConts (prm) {
         try {
@@ -33,15 +38,6 @@ mf.comp.{@Comp-name} = class extends mf.Component {
             throw e;
         }
     }
-    
-    themeConts () {
-        try {
-            
-        } catch (e) {
-            console.error(e.stack);
-            throw e;
-        }
-    }
-    
 }
 module.exports = mofron.comp.{@Comp-name};
+/* end of file */

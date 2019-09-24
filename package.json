@@ -1,6 +1,6 @@
 {
   "name": "mofron-comp-dev",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "mofron component for development",
   "main": "index.js",
   "scripts": {
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/simpart/mofron-comp-dev.git"
+    "url": "git+https://github.com/mofron/mofron-comp-dev.git"
   },
   "keywords": [
     "front-end"
   ],
   "author": "simparts",
-  "license": "SEE LICENSE IN LICENSE",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/simpart/mofron-comp-dev/issues"
+    "url": "https://github.com/mofron/mofron-comp-dev/issues"
   },
-  "homepage": "https://github.com/simpart/mofron-comp-dev#readme"
+  "homepage": "https://github.com/mofron/mofron-comp-dev#readme"
 }

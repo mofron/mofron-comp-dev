@@ -1,18 +1,16 @@
 /**
- * @file   mofron-comp-{@comp-name}/index.js
+ * @file mofron-comp-{@comp-name}/index.js
+ * @brief 
  * @author simpart
  */
-let mf = require('mofron');
-/**
- * @class mofron.comp.{@Comp-name}
- * @brief {@comp-name} component for mofron
- */
+const mf = require('mofron');
 mf.comp.{@Comp-name} = class extends mf.Component {
-    
     /**
      * initialize component
      * 
-     * @param po paramter or option
+     * @param (mixed) 
+     *                object: component option
+     * @type private
      */
     constructor (po) {
         try {
@@ -28,9 +26,9 @@ mf.comp.{@Comp-name} = class extends mf.Component {
     /**
      * initialize dom contents
      * 
-     * @param prm : 
+     * @type private
      */
-    initDomConts (prm) {
+    initDomConts () {
         try {
             super.initDomConts();
         } catch (e) {
@@ -39,5 +37,5 @@ mf.comp.{@Comp-name} = class extends mf.Component {
         }
     }
 }
-module.exports = mofron.comp.{@Comp-name};
+module.exports = mf.comp.{@Comp-name};
 /* end of file */

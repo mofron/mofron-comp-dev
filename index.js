@@ -1,22 +1,28 @@
 /**
  * @file mofron-comp-{@comp-name}/index.js
- * @brief 
- * @author simpart
+ * @brief component module template for developper
+ * @license MIT
  */
-const mf = require('mofron');
-mf.comp.{@Comp-name} = class extends mf.Component {
+module.exports = class extends mofron.class.Component {
     /**
      * initialize component
      * 
      * @param (mixed) 
-     *                object: component option
+     *                key-value: component config
+     * @short 
      * @type private
      */
-    constructor (po) {
+    constructor (p1) {
         try {
             super();
-            this.name('{@Comp-name}');
-            this.prmOpt(po);
+            this.name("");    // please set module name
+	    this.shortForm(); // please set short form parameter name
+            
+	    /* init config */
+
+	    if (0 < arguments.length) {
+                this.config(p1);
+            }
         } catch (e) {
             console.error(e.stack);
             throw e;
@@ -31,11 +37,11 @@ mf.comp.{@Comp-name} = class extends mf.Component {
     initDomConts () {
         try {
             super.initDomConts();
+	    
         } catch (e) {
             console.error(e.stack);
             throw e;
         }
     }
 }
-module.exports = mf.comp.{@Comp-name};
 /* end of file */

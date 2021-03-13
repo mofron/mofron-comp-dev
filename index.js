@@ -15,7 +15,7 @@ module.exports = class extends mofron.class.Component {
     constructor (p1) {
         try {
             super();
-            this.name("");    // please set module name
+            this.modname(""); // please set module name
 	    this.shortForm(); // please set short form parameter name
             
 	    /* init config */
